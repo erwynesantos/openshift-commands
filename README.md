@@ -9,7 +9,7 @@ Helpful commands for Openshift 3.x and 4.x
 |Non-running pods| `oc get pods --all-namespaces grep -v Run`|
 |Get logs on the pod under _n=gyro-detection-native-i-9gt4d_ |`oc logs gyro-detection-native-i-9gt4d`|
 |Get nodes|`oc get nodes`|
-|Get specific pod and its corresponding deployed host node | oc get pods -o wide | grep gyro-detection|
+|Get specific pod and its corresponding deployed host node | `oc get pods -o wide grep gyro-detection`|
 |Deployment config / dc|`oc get dc`|
 | |`oc dc gyro-detection -o yaml`|
 | |`oc get nodes --show-labels`|
